@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💗 300+ I LOVE YOU - LEDAKAN CINTA 💗</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff0844 0%, #ffb199 100%);
+            font-family: 'Comic Neue', 'Comic Sans MS', 'Segoe UI Emoji', cursive, sans-serif;
+            min-height: 100vh;
+            padding: 30px 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 245, 245, 0.92);
+            border-radius: 65px;
+            padding: 30px 20px 40px;
+            box-shadow: 0 25px 55px rgba(0,0,0,0.3), inset 0 1px 4px #fff9;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3.2rem;
+            background: linear-gradient(135deg, #ff2e63, #ff6b9d);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 2px 2px 12px #ffb8c6;
+            margin-bottom: 10px;
+        }
+
+        .sub {
+            text-align: center;
+            font-size: 1.6rem;
+            margin-bottom: 30px;
+            color: #b13e5c;
+            font-weight: bold;
+        }
+
+        .love-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin: 25px 0;
+            max-height: 60vh;
+            overflow-y: auto;
+            padding: 15px;
+            background: #fff0f0;
+            border-radius: 48px;
+            box-shadow: inset 0 0 0 2px #ffe0e0, 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .love-card {
+            background: linear-gradient(145deg, #ffe6f0, #ffd0e0);
+            padding: 12px 18px;
+            border-radius: 60px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: 0.1s ease;
+            border: 1px solid #ffb7c5;
+            white-space: nowrap;
+        }
+
+        .love-card:hover {
+            transform: scale(1.02);
+            background: #ffd9e8;
+        }
+
+        .counter {
+            text-align: center;
+            background: #c41e3a;
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 50px;
+            color: gold;
+            font-weight: bold;
+            font-size: 1.7rem;
+            margin: 20px auto 10px;
+            box-shadow: 0 5px 0 #751d2f;
+        }
+
+        .stiker-riot {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 20px 0 5px;
+            background: #ffdee8;
+            padding: 15px;
+            border-radius: 80px;
+            letter-spacing: 8px;
+        }
+
+        button {
+            display: block;
+            margin: 25px auto 15px;
+            background: #ff4d6d;
+            border: none;
+            padding: 16px 32px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 60px;
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+            font-family: monospace;
+            font-weight: bold;
+            box-shadow: 0 7px 0 #942f47;
+        }
+
+        button:active {
+            transform: translateY(4px);
+            box-shadow: 0 3px 0 #942f47;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #b34159;
+        }
+
+        /* scrollbar lucu */
+        .love-grid::-webkit-scrollbar {
+            width: 12px;
+        }
+        .love-grid::-webkit-scrollbar-track {
+            background: #ffe0ea;
+            border-radius: 20px;
+        }
+        .love-grid::-webkit-scrollbar-thumb {
+            background: #ff7b9c;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>💗💗💗 I LOVE YOU 3000+ 💗💗💗</h1>
+    <div class="sub">
+        🫶🏻 ledakan cinta buat kamu! 🫶🏻
+    </div>
+
+    <div class="stiker-riot">
+        🧸💖✨💕💘🐣🦄💗🐻‍❄️🍬🎀💞💓🐱🌸🥰💋
+    </div>
+
+    <div id="loveContainer" class="love-grid">
+        <!-- nanti diisi javascript 300+ i love you -->
+    </div>
+
+    <div style="text-align: center;">
+        <div class="counter" id="counterDisplay">💖 0 KALI I LOVE YOU 💖</div>
+    </div>
+
+    <button id="refreshLoveBtn">💘 TAMBAHIN LAGI CINTA 💘 (acak +300)</button>
+    <footer>🐣 LOPE LOPE BANGET! SETIAP "I LOVE YOU" BENERAN DARI HATI 🐣💕</footer>
+</div>
+
+<script>
+    function generateLoveExplosion() {
+        const container = document.getElementById('loveContainer');
+        const counterSpan = document.getElementById('counterDisplay');
+        
+        // kumpulan variasi I Love You biar lucu & ga bosen
+        const lovePhrases = [
+            "I Love You 💖", "I Love You 🥰", "I Love You 💗", "I Love You 💘",
+            "I Love You 💕", "I Love You 💞", "I Love You 💓", "I Love You 🫶",
+            "I 💖 U", "I 🫶 U", "Aku Sayang Kamu 💋", "Love You ❤️",
+            "Lope U 💕", "💗 U 4ever", "I Love You 😘", "Love Love Love 💖",
+            "💖 LOVE 💖", "I 💘 U", "🤍 I LOVE YOU 🤍", "🐣 I Lope U 🐣",
+            "💞 Sayang banget 💞", "💗 Forever yours 💗", "💖 U + ME 💖",
+            "I Love You 3000 💘", "Lope Lope Kamu 🧸", "💕 My heart is yours 💕",
+            "💓 Cuma Kamu 💓", "💗 U make me happy 💗", "🐱 I love you meow 🐱",
+            "🦄 I love you rainbow 🦄", "💖 selamanya 💖", "🌸 love infinity 🌸"
+        ];
+        
+        // EMOTICON & STIKER CINTA BANYAK BANGET!
+        const extraEmojis = [
+            "💖", "💗", "💘", "💝", "💕", "💞", "💓", "🧡", "💛", "💚", "💙", "💜",
+            "🫶", "💋", "😘", "🥰", "😍", "🐣", "🐻‍❄️", "🐱", "🦄", "🌸", "🎀", "✨", 
+            "⭐", "💫", "❤️‍🔥", "❤️‍🩹", "💌", "💐", "🍬", "🍭", "🧸", "💟", "❣️"
+        ];
+        
+        // biar total LEBIH DARI 300 (saya buat 333 item biaya mantap)
+        const totalLove = 333; 
+        
+        // kosongin container
+        container.innerHTML = '';
+        
+        // loop buat 333 elemen cinta
+        for (let i = 0; i < totalLove; i++) {
+            // pilih random phrase dari lovePhrases
+            let randomPhrase = lovePhrases[Math.floor(Math.random() * lovePhrases.length)];
+            // tambahin 1-3 emoji cinta random dibelakang biar makin ramai
+            let tambahanEmoji = '';
+            const jumlahEmoji = Math.floor(Math.random() * 3) + 1; // 1-3 emoji
+            for (let e = 0; e < jumlahEmoji; e++) {
+                const randomEmoji = extraEmojis[Math.floor(Math.random() * extraEmojis.length)];
+                tambahanEmoji += randomEmoji;
+            }
+            
+            // gabungin jadi teks manis
+            let fullText = `${randomPhrase} ${tambahanEmoji}`;
+            
+            // bikin elemen div lucu
+            const loveDiv = document.createElement('div');
+            loveDiv.className = 'love-card';
+            loveDiv.innerHTML = fullText;
+            container.appendChild(loveDiv);
+        }
+        
+        // update counter display
+        counterSpan.innerHTML = `💗 ${totalLove} KALI I LOVE YOU + EMOJI CINTA 💗`;
+        
+        // efek notifikasi kecil (optional)
+        const stikerArea = document.querySelector('.stiker-riot');
+        stikerArea.style.transform = 'scale(1.02)';
+        setTimeout(() => { stikerArea.style.transform = 'scale(1)'; }, 200);
+    }
+    
+    // tombol untuk generate ulang (tetap lebih dari 300)
+    document.getElementById('refreshLoveBtn').addEventListener('click', () => {
+        generateLoveExplosion();
+        // getar gemoy
+        const btn = document.getElementById('refreshLoveBtn');
+        btn.style.backgroundColor = '#ff2e63';
+        setTimeout(() => { btn.style.backgroundColor = '#ff4d6d'; }, 150);
+    });
+    
+    // saat pertama kali di load, langsung tampilkan 333 I LOVE YOU
+    generateLoveExplosion();
+</script>
+</body>
+</html>
