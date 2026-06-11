@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>💗 500+ I LOVE YOU AGUNG 💗</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff0844 0%, #ffb199 100%);
+            font-family: system-ui, 'Segoe UI Emoji', 'Apple Color Emoji', 'Comic Sans MS', cursive, sans-serif;
+            padding: 15px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: rgba(255, 250, 240, 0.96);
+            border-radius: 55px;
+            padding: 25px 18px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+        }
+
+        h1 {
+            font-size: 2rem;
+            background: linear-gradient(135deg, #e63946, #ff6b81);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .sub {
+            font-size: 1.2rem;
+            color: #c44569;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .stiker-besar {
+            font-size: 2.2rem;
+            margin: 10px 0;
+            letter-spacing: 8px;
+            background: #ffe0ea;
+            padding: 10px;
+            border-radius: 50px;
+        }
+
+        .love-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            max-height: 55vh;
+            overflow-y: auto;
+            margin: 18px 0;
+            padding: 15px;
+            background: #fff0f3;
+            border-radius: 45px;
+            border: 2px solid #ffb7c5;
+        }
+
+        .love-card {
+            background: linear-gradient(145deg, #ffe0ea, #ffd0de);
+            padding: 10px 18px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            white-space: nowrap;
+            border: 1px solid #ff9eb0;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: 0.1s ease;
+        }
+
+        .love-card:hover {
+            transform: scale(1.02);
+            background: #ffd4e2;
+        }
+
+        button {
+            background: #ff4d6d;
+            border: none;
+            padding: 14px 22px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 60px;
+            color: white;
+            margin: 15px 0 10px;
+            width: 90%;
+            box-shadow: 0 6px 0 #942f47;
+            transition: 0.07s linear;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        button:active {
+            transform: translateY(3px);
+            box-shadow: 0 2px 0 #942f47;
+        }
+
+        .counter {
+            background: #c41e3a;
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 50px;
+            color: #ffd966;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin: 8px 0;
+        }
+
+        footer {
+            font-size: 0.9rem;
+            margin-top: 15px;
+            color: #b13e5c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>💗💖 UNTUK AGUNG 💖💗</h1>
+    <div class="sub">🐣 dari seseorang yang sayang banget sama kamu 🐣</div>
+    
+    <div class="stiker-besar">
+        💖💕💘💞💓💗💝💟❣️🫶💋🐣🧸🌸🍬🐱🦄✨💫
+    </div>
+
+    <div id="loveContainer" class="love-grid"></div>
+
+    <div class="counter" id="counterDisplay">💗 0 KALI I LOVE YOU AGUNG 💗</div>
+
+    <button id="refreshBtn">💢 GENERATE ULANG 500+ CINTA 💢</button>
+    
+    <div class="stiker-besar">
+        🐻‍❄️💌🎀🍭⭐💖 I LOVE YOU AGUNG 💖⭐🍭🎀💌🐻‍❄️
+    </div>
+    
+    <footer>💌 "Buat Agung, kamu spesial banget di hatiku. I Love You lebih dari 500 kali!" 💌</footer>
+</div>
+
+<script>
+    function generateLoveAgung() {
+        const container = document.getElementById('loveContainer');
+        const counterSpan = document.getElementById('counterDisplay');
+        
+        // NAMA (bisa ganti sesuai nama orang yang kamu tuju)
+        const nama = "Agung";
+        
+        // Variasi kata cinta dengan nama AGUNG
+        const kataCinta = [
+            `💖 I Love You ${nama} 💖`,
+            `💗 Love You ${nama} 💗`,
+            `💘 Sayang ${nama} 💘`,
+            `🥰 ${nama} I Love U 🥰`,
+            `🐣 Aku Cinta ${nama} 🐣`,
+            `🫶 My Heart for ${nama} 🫶`,
+            `💕 Forever ${nama} 💕`,
+            `💞 Cuma Kamu ${nama} 💞`,
+            `🐻‍❄️ ${nama} My Love 🐻‍❄️`,
+            `🌸 ${nama} Selamanya 🌸`,
+            `💋 Kiss buat ${nama} 💋`,
+            `🍬 ${nama} Manisnya Kamu 🍬`,
+            `🧸 ${nama} Peluk Cinta 🧸`,
+            `💟 ${nama} Soulmate 💟`,
+            `✨ Love ${nama} Infinity ✨`,
+            `💓 ${nama} My Everything 💓`,
+            `💝 ${nama} My Angel 💝`,
+            `❣️ ${nama} The Best ❣️`,
+            `💌 Surat Cinta buat ${nama} 💌`,
+            `💫 ${nama} My Universe 💫`,
+            `💎 ${nama} My Treasure 💎`,
+            `🌹 ${nama} My Rose 🌹`,
+            `⭐ ${nama} My Star ⭐`,
+            `🌈 ${nama} My Rainbow 🌈`
+        ];
+        
+        // Kumpulan emoji love & lucu yang BANYAK
+        const emojiLucu = [
+            "💖", "💗", "💘", "💕", "💞", "💓", "💝", "💟", "❣️", "🫶", "💋", "😘", "🥰", "😍",
+            "🐣", "🐻‍❄️", "🐱", "🐶", "🐼", "🐸", "🐙", "🦄", "🦋", "🐝", "🌸", "🌼", "🌻", "🌺",
+            "🍬", "🍭", "🍫", "🍪", "🎀", "✨", "⭐", "💫", "🌟", "🔥", "💧", "💨", "🌈", "⭐", "🎈",
+            "🧸", "💌", "💐", "🎁", "🏩", "💒", "❤️‍🔥", "❤️‍🩹", "💚", "💛", "💙", "💜", "🧡", "🤍", "🖤"
+        ];
+        
+        // TOTAL 500+ (saya buat 520 biar mantap)
+        const totalLove = 520;
+        
+        // Kosongkan container
+        container.innerHTML = '';
+        
+        // Loop buat 520 elemen cinta
+        for (let i = 0; i < totalLove; i++) {
+            // Pilih random kata cinta
+            let randomKata = kataCinta[Math.floor(Math.random() * kataCinta.length)];
+            
+            // Tambah 2-4 emoji lucu random di belakang
+            let tambahanEmoji = '';
+            const jumlahEmoji = Math.floor(Math.random() * 4) + 2; // 2-4 emoji
+            for (let e = 0; e < jumlahEmoji; e++) {
+                const randomEmoji = emojiLucu[Math.floor(Math.random() * emojiLucu.length)];
+                tambahanEmoji += randomEmoji;
+            }
+            
+            // Gabungkan
+            let fullText = `${randomKata} ${tambahanEmoji}`;
+            
+            // Buat elemen love card
+            const loveDiv = document.createElement('div');
+            loveDiv.className = 'love-card';
+            loveDiv.innerHTML = fullText;
+            container.appendChild(loveDiv);
+        }
+        
+        // Update counter
+        counterSpan.innerHTML = `💗 ${totalLove} KALI I LOVE YOU AGUNG + EMOJI 💗`;
+    }
+    
+    // Event listener tombol
+    document.getElementById('refreshBtn').addEventListener('click', () => {
+        generateLoveAgung();
+        
+        // Efek animasi tombol
+        const btn = document.getElementById('refreshBtn');
+        btn.style.backgroundColor = '#ff2e63';
+        setTimeout(() => { btn.style.backgroundColor = '#ff4d6d'; }, 150);
+    });
+    
+    // Generate pas pertama kali dibuka
+    generateLoveAgung();
+</script>
+</body>
+</html>
